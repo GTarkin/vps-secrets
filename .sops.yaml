@@ -1,0 +1,8 @@
+keys:                                                                                                             
+  - &vps age166jqk5tluzscjflrh9qkspy3kfu3p8mqj5vt55drp5295yg3ycmsgrrql0                                           
+creation_rules:                                                                                                   
+  - path_regex: secrets\.yaml$                                                                                    
+    encrypted_regex: ".*"                                                                                         
+    key_groups:                                                                                                   
+      - age:                                                                                                      
+          - *vps                                                                                                
